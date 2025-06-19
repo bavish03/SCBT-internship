@@ -1,0 +1,269 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.questrial-regular {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color :#3f51b5;
+}
+  
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.253);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container p a{
+    font-weight: 400;
+    color :#ffffff;
+}
+
+.sastra-logo {
+    max-height: 60px;
+}
+
+.school-title {
+    text-align: right;
+    color: #3f51b5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.internship-heading h1 {
+    color: #3f51b5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.internship-description p {
+    margin-bottom: 15px;
+}
+
+/* List styles */
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.main-point {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-point ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.intake-details {
+    padding : 0px 0px 0px 50px;
+}
+
+.intake-details li {
+    color: #3f51b5;
+}
+
+.main-point li { 
+    color: #333;
+}
+
+.main-point ul li {
+    font-weight: normal;
+    position: relative;
+    padding-left: 15px;
+    
+}
+
+.main-point ul li:before,
+.accommodation ul li:before,
+.application ul li:before,
+.process ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+section ul li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+}
+
+section ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+/* Section headings */
+section h2 {
+    color: #3f51b5;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Note section */
+.note {
+    margin: 20px 0;
+    color: #3f51b5;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bold-span {
+    font-weight: bold;
+}
+
+/* Apply button */
+.apply-btn {
+    display: inline-block;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.apply-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Table styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table th:nth-child(1),
+table td:nth-child(1) {
+    width: 20%;
+}
+
+table th:nth-child(2),
+table td:nth-child(2) {
+    width: 25%;
+}
+
+table th:nth-child(3),
+table td:nth-child(3) {
+    width: 55%;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .school-title {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .internship-heading h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    table th, table td {
+        padding: 5px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .internship-heading h1 {
+        font-size: 18px;
+    }
+    
+    .intake-details, .accommodation, .application, .process {
+        padding: 0 10px;
+    }
+    
+    .apply-btn {
+        width: 100%;
+    }
+}
